@@ -1,8 +1,15 @@
 import { Header } from '../../components/Header'
-import { AddButton, Container, HomeContainer, TaskInput } from './styles'
+import {
+  AddButton,
+  Container,
+  FormContainer,
+  TaskInput,
+  TaskListContainer,
+} from './styles'
 import { useState } from 'react'
 import { AntDesign } from '@expo/vector-icons'
 import { defaulTheme } from '../../themes/theme'
+import { TaskList } from '../../components/TaskList'
 
 export default function Home() {
   const [isFocused, setIsFocused] = useState(false)
@@ -13,7 +20,7 @@ export default function Home() {
         <Header />
       </Container>
 
-      <HomeContainer>
+      <FormContainer>
         <TaskInput
           isFocused={isFocused}
           onTouchStart={() => {
@@ -28,7 +35,10 @@ export default function Home() {
         <AddButton>
           <AntDesign name="pluscircleo" size={16} color="white" />
         </AddButton>
-      </HomeContainer>
+      </FormContainer>
+      <TaskListContainer>
+        <TaskList />
+      </TaskListContainer>
     </>
   )
 }

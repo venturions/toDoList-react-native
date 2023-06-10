@@ -1,0 +1,13 @@
+export type Color =
+  | 'blue-dark'
+  | 'blue'
+  | 'purple-dark'
+  | 'purple'
+  | 'gray-700'
+  | 'gray-600'
+  | 'gray-500'
+  | 'gray-400'
+  | 'gray-300'
+  | 'gray-200'
+  | 'gray-100'
+  | 'danger'

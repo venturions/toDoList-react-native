@@ -1,20 +1,9 @@
 import styled from 'styled-components'
 import { Text } from 'react-native'
+import { Color } from '../../@types/colors'
 
 export interface BaseTypography {
-  color:
-    | 'blue-dark'
-    | 'blue'
-    | 'purple-dark'
-    | 'purple'
-    | 'gray-700'
-    | 'gray-600'
-    | 'gray-500'
-    | 'gray-400'
-    | 'gray-300'
-    | 'gray-200'
-    | 'gray-100'
-    | 'danger'
+  color: Color
   size: 'sm' | 'md' | 'lg'
   fontWeight: 'regular' | 'bold'
 }

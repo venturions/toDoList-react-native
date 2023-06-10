@@ -10,7 +10,10 @@ export const Container = styled(View)`
   align-items: flex-start;
 `
 
-export const HomeContainer = styled(View)`
+export const TaskListContainer = styled(View)`
+  margin: 0 32px;
+`
+export const FormContainer = styled(View)`
   flex-direction: row;
   justify-content: center;
   align-items: center;
