@@ -1,10 +1,14 @@
-import { View } from 'react-native'
 import { Typography } from '../../components/Typography'
+import { Header } from '../../components/Header'
+import { HomeContainer } from './styles'
 
-export function Home() {
+export default function Home() {
   return (
-    <View>
-      <Typography color="gray-500">Estrutura</Typography>
-    </View>
+    <>
+      <HomeContainer>
+        <Header />
+      </HomeContainer>
+      <Typography color="gray-600">TeAAAAAAAAAAAAAAAAAAAAAAAxt</Typography>
+    </>
   )
 }
