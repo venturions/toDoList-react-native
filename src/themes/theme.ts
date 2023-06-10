@@ -21,9 +21,9 @@ export const defaulTheme = {
   },
 
   fontSize: {
-    sm: 12,
-    md: 14,
-    lg: 16,
+    sm: '12px',
+    md: '14px',
+    lg: '16px',
   },
 
   fontWeights: {
