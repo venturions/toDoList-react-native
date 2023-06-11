@@ -4,7 +4,7 @@ import { styled } from 'styled-components'
 export const CounterContainer = styled(View)`
   margin-top: 32px;
   flex-direction: row;
-  gap: 8;
+  gap: 8px;
 `
 export const CountContainer = styled(View)`
   display: flex;

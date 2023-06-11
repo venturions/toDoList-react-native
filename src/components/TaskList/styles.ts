@@ -1,3 +1,4 @@
+import Checkbox from 'expo-checkbox'
 import { View } from 'react-native'
 import { styled } from 'styled-components'
 import { Image } from 'expo-image'
@@ -22,4 +23,17 @@ export const Clipboard = styled(Image)`
   width: 56px;
   height: 56px;
   margin-bottom: 16px;
+`
+export const StyledCheckbox = styled(Checkbox)`
+  position: absolute;
+  left: 13.64%;
+  right: 13.64%;
+  top: 13.64%;
+  bottom: 13.64%;
+
+  /* PurpleDark */
+
+  background: transparent;
+  border-color: #4ea8de;
+  border-radius: 999px;
 `

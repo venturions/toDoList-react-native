@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 import { CountersContainer, TasksContainer, Clipboard } from './styles'
 import { Counter } from '../Counter'
 import { Typography } from '../Typography'
+// import { MyCheckbox } from '../Checkbox'
 
 interface TaskListProps {
   children?: ReactNode
@@ -25,6 +26,7 @@ export function TaskList({ children }: TaskListProps) {
         <Typography color="gray-300">
           Crie tarefas e organize seus itens a fazer
         </Typography>
+        {/* <MyCheckbox /> */}
       </TasksContainer>
     </>
   )
