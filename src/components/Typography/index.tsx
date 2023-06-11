@@ -1,10 +1,9 @@
-import { ReactNode } from 'react'
 import { StyledText } from './styles'
 import { Color } from '../../@types/colors'
+import { TextProps } from 'react-native'
 
-interface TypographyProps {
-  children: ReactNode | string
-  color: Color
+interface TypographyProps extends TextProps {
+  color?: Color
   size?: 'sm' | 'md' | 'lg'
   fontWeight?: 'regular' | 'bold'
 }
@@ -14,9 +13,10 @@ export function Typography({
   fontWeight = 'regular',
   children,
   color = 'gray-100',
+  ...props
 }: TypographyProps) {
   return (
-    <StyledText size={size} fontWeight={fontWeight} color={color}>
+    <StyledText size={size} fontWeight={fontWeight} color={color} {...props}>
       {children}
     </StyledText>
   )

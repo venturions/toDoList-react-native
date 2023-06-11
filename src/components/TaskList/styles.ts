@@ -9,7 +9,7 @@ export const CountersContainer = styled(View)`
   margin: 24px 0;
 `
 
-export const TasksContainer = styled(View)`
+export const EmptyTasksContainer = styled(View)`
   justify-content: center;
   align-items: center;
   padding: 48px 20px;

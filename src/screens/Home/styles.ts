@@ -1,16 +1,13 @@
 import { TextInput, View, TouchableOpacity } from 'react-native'
 import { styled } from 'styled-components'
 
-interface TaskInputProps {
-  isFocused: boolean
-}
-
 export const Container = styled(View)`
   flex-direction: row;
   align-items: flex-start;
 `
 
 export const TaskListContainer = styled(View)`
+  flex: 1;
   margin: 0 32px;
 `
 export const FormContainer = styled(View)`
@@ -26,7 +23,7 @@ export const FormContainer = styled(View)`
   right: 24px;
   top: 142px;
 `
-export const TaskInput = styled(TextInput)<TaskInputProps>`
+export const TaskInput = styled(TextInput)`
   background-color: ${(props) => props.theme.colors['gray-500']};
 
   width: 271px;
@@ -37,11 +34,7 @@ export const TaskInput = styled(TextInput)<TaskInputProps>`
   padding: 16px;
   gap: 8px;
 
-  border: 1px solid
-    ${(props) =>
-      props.isFocused
-        ? props.theme.colors['purple-dark']
-        : props.theme.colors['gray-700']};
+  border: 1px solid ${(props) => props.theme.colors['gray-700']};
   border-radius: 6px;
 
   color: ${(props) => props.theme.colors['gray-100']};

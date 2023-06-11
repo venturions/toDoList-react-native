@@ -8,8 +8,8 @@ interface CheckboxStyleProps {
 export const CheckBoxContainer = styled(Pressable)<CheckboxStyleProps>`
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   border-radius: 999px;
   border: ${(props) =>
     props.checked ? 'none' : `2px solid ${props.theme.colors.blue}`};
