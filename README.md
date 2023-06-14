@@ -1,4 +1,4 @@
-# Desafio: Aplicativo de Controle de Tarefas
+# Desafio: Aplicativo de controle de tarefas versão Mobile
 
 Este repositório contém o código-fonte de uma aplicação de controle de tarefas no estilo **to-do list**, desenvolvida como parte de um desafio do bootcamp de especialização Ignite da Rocketseat. A aplicação possui as seguintes funcionalidades:
 
